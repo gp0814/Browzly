@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="resize-handle" id="resizeHandle"></div>
+    <div class="container">
+        <div class="header">
+            <h2>Research Assistant</h2>
+            <div class="actions">
+                <button id="summarizeBtn">Summarize</button>
+                <button id="suggestBtn">Suggest</button>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <div class="collapsible-header" id="notesHeader">
+                <h3>Research Notes</h3>
+                <span class="toggle-icon">−</span>
+            </div>
+            <div class="collapsible-content" id="notesContent">
+                <div id="notes" class="notes-box"></div>
+                <button id="saveNotesBtn">Save Notes</button>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <div class="collapsible-header" id="resultsHeader">
+                <h3>Results</h3>
+                <span class="toggle-icon">−</span>
+            </div>
+            <div class="collapsible-content" id="results"></div>
+            <button id="copyToNotesBtn" style="display:none; margin:10px auto; width:90%;">Copy to Notes</button>
+        </div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
